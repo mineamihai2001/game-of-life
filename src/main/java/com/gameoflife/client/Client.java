@@ -19,7 +19,8 @@ public class Client {
         try {
             Socket socket = new Socket(this.address, this.port);
             System.out.println("client connected");
-            // TODO: send client details to the server
+
+            //TODO: send client details to the server
 
             BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
             DataOutputStream out = new DataOutputStream(socket.getOutputStream());
